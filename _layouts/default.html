@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Blue Terminal — Energy Data Visualizer</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="description" content="Blue Terminal — Energy Data Visualizer">
+
+      <style type="text/css">
+        .js .flash {visibility: hidden;}
+      </style>
+      <script type="text/javascript">
+        document.documentElement.className = 'js';
+      </script>
+
+      <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/style.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}/css/royalslider/royalslider.css">
+
+      <script src="//use.typekit.net/rte7wfh.js"></script>
+      <script>try{Typekit.load();}catch(e){}</script>
+
+      <script src="{{ site.baseurl }}/js/libs/jquery-1.8.3.min.js"></script>
+      <script src="{{ site.baseurl }}/js/royalslider/jquery.royalslider.min.js"></script>
+  </head>
+
+    <body>
+      <div id='maincontent' class='content_container flash'>
+        <div class='main_header'>
+          <div class='logo'>
+            <img src='/img/logo.png'>
+          </div>
+        </div>
+
+        <div class='cover_container'>
+          <div id='your-slider-selector' class="royalSlider rsDefault">
+
+            <div class='individual_slide oil'>
+            </div>
+            <div class='individual_slide nuclear'>
+            </div>
+
+            <div class='individual_slide solar2'>
+            </div>
+          </div>
+        </div>
+
+        <div class='signin_form'>
+          <!--<header>Sign In</header>-->
+          <form method="post" action="/user/login">
+            <input name="username" class="form-control" placeholder="username">
+            <input name="password" type="password" placeholder="password" class="form-control">
+            <button type="submit" class="btn submit btn-primary">Submit</button>
+            <!--<a href="/user/signup" class="btn btn-info btn-action">Register</a>-->
+          </form>
+        </div>
+
+      </div>
+
+        <script>
+            jQuery(document).ready(function($) {
+                $(".royalSlider").royalSlider({
+              transitionType: 'fade',
+              randomizeSlides: true,
+              controlNavigation: 'none',
+              arrowsNavHideOnTouch: true,
+              arrowsNav: false,
+              loop: true,
+              transitionSpeed: 1100,
+              keyboardNavEnabled: true,
+              autoPlay: {
+                enabled: true,
+                delay: 30000
+              }
+                });
+            });
+        </script>
+
+        <script type="text/javascript">
+          window.onload = function() {
+            $("#maincontent").removeClass( "flash" ); }
+        </script>
+        <script src="{{ site.baseurl }}/js/libs/jquery-1.8.3.min.js"></script>
+
+    </body>
+</html>

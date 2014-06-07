@@ -1,0 +1,96 @@
+#your-slider-selector {
+  position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0px;
+	/* height of thumbs (if not required set to 0) */
+	height: auto;
+	width: auto;
+}
+.cover_container, .individual_slide {
+	position: absolute;
+	top: 0em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1000;
+}
+
+.nuclear, .coal, .hydro, .biofuel2, .solar2, .oil, .geothermal, .wind {
+}
+
+.nuclear {
+	background:     linear-gradient(
+      hsla(0, 0%, 0%, 0.3),
+      hsla(0, 0%, 0%, 0.3)
+    ), url('/img/nuclear_small.jpg');
+	background-position: left center;
+		background-size: cover;
+
+}
+.coal {
+	background:     linear-gradient(
+      hsla(0, 0%, 0%, 0.3),
+      hsla(0, 0%, 0%, 0.3)
+    ), url('/img/coal_small.jpg');
+	background-position: left center;
+		background-size: cover;
+
+}
+.oil {
+	background:     linear-gradient(
+      hsla(0, 0%, 0%, 0.3),
+      hsla(0, 0%, 0%, 0.3)
+    ), url('/img/oil_small.jpg');
+	background-position: 70% center;
+		background-size: cover;
+
+}
+.solar2 {
+	background:     linear-gradient(
+      hsla(0, 0%, 0%, 0.3),
+      hsla(0, 0%, 0%, 0.3)
+    ), url('/img/solar2.jpg');
+	background-position: left bottom;
+		background-size: cover;
+
+}
+.hydro {
+	background:     linear-gradient(
+      hsla(0, 0%, 0%, 0.3),
+      hsla(0, 0%, 0%, 0.3)
+    ), url('/img/hydro_small.jpg');
+	background-position: left center;
+		background-size: cover;
+
+}
+.geothermal {
+	background:     linear-gradient(
+      hsla(0, 0%, 0%, 0.3),
+      hsla(0, 0%, 0%, 0.3)
+    ), url('/img/geothermal.jpg');
+	background-position: left center;
+		background-size: cover;
+
+}
+.wind {
+	background:     linear-gradient(
+      hsla(0, 0%, 0%, 0.3),
+      hsla(0, 0%, 0%, 0.3)
+    ), url('/img/wind.jpg');
+	background-position: left top;
+		background-size: cover;
+
+}
+.biofuel2 {
+	background:     linear-gradient(
+      hsla(0, 0%, 0%, 0.3),
+      hsla(0, 0%, 0%, 0.3)
+    ), url('/img/biofuel2.jpg');
+	background-position: left center;
+		background-size: cover;
+
+}
+
+

@@ -1,0 +1,181 @@
+/* =============================================================================
+   Base
+========================================================================== */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  /* EDIT: new syntax for FF 15+ */
+  -ms-font-feature-settings: "liga";
+  -o-font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+html, button, input, select, textarea {
+  @extend .copy;
+  line-height: 1.7;
+  color: $core_text_color;
+}
+
+body {
+  font-size: .8em;
+  margin: .95em 1.2em;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+*/
+
+::-moz-selection {
+  color: red;
+  text-shadow: none;
+}
+
+::selection {
+  color: red;
+  text-shadow: none;
+}
+
+a::-moz-selection {
+  color: red;
+  text-shadow: none;
+}
+
+a::selection {
+  color: red;
+  text-shadow: none;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+a {
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out, border-color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out, border-color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out, border-color 0.3s ease-out;
+  -ms-transition: color 0.3s ease-out, border-color 0.3s ease-out;
+  transition: color 0.3s ease-out, border-color 0.3s ease-out;
+  color: white;
+}
+
+
+a {color: white;}
+a:hover {color: white;}
+
+
+
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+
+h4, h5 {
+  line-height: .9;
+}
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin: 1.2em 0 0  0;
+}
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+}
+
+
+
+/* =============================================================================
+   Stylin Styles
+   ========================================================================== */
+
+
+.content_offset {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {width: 10em;}
+
+
+
+
+@media only screen and (min-width: 42em) {
+
+body {font-size: .9em;}
+
+}
+
+@media only screen and (min-width: 65em) {
+  body {font-size: 1em;}
+
+}
+
+@media only screen and (min-width: 80em) {
+  body {font-size: 1.1em;}
+
+}
+
+@media only screen and (min-width: 95em) {
+  body {font-size: 1.2em;}
+
+}
+
+
