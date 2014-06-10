@@ -1,3 +1,7 @@
+/*
+Reusable bits go here
+*/
+
 $core_text_color: #333;
 $link_hover_color: black;
 $link_color: white;
@@ -5,7 +9,6 @@ $link_color: white;
 $knockout_text_color: $core_text_color;
 $logo_color: hsl(0,0%,20%);
 
-$sans_serif_generic_size: .6em;
 
 /* =============================================================================
    Core Typography
@@ -17,65 +20,6 @@ $sans_serif_generic_size: .6em;
   font-weight: 400;
 }
 
-
-/* ==========================================================================
-   Custom Helper classes
-   ========================================================================== */
-
-.margin_module > *:last-child, .margin_module_first > *:last-child {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.margin_module > *:first-child,
-.margin_module > *:first-child > *:first-child,
-.margin_module > *:first-child > *:first-child > *:first-child {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.margin_module_first > *:first-child {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* Div Height */
-
-.full, .ninety, .three_quarters, .two_thirds, .half, .padded_cover {
-  position: relative;
-}
-
-/* Visual centering */
-
-.control_box {
-  position: absolute;
-}
-
-.centered_layout {
-  text-align: center;
-}
-
-.control_box {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
-}
-
-.bottom_box {
-  position: absolute;
-  text-align: center;
-  bottom: 1.9em;
-  width: 100%;
-}
-
-.bottom_left {
-  position: absolute;
-  bottom: .5em;
-  left:.5em;
-}
 /* ==========================================================================
    Common Helper classes
    ========================================================================== */

@@ -1,6 +1,7 @@
-/* =============================================================================
-   Base
-========================================================================== */
+/*
+General stuff falls here, as it is made more specific try to move it to a scss partial
+*/
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -30,6 +31,7 @@ html {
 html, button, input, select, textarea {
   @extend .copy;
   line-height: 1.7;
+  background: #e6e6e6;
   color: $core_text_color;
 }
 
@@ -153,29 +155,5 @@ figure {
 }
 
 .logo {width: 10em;}
-
-
-
-
-@media only screen and (min-width: 42em) {
-
-body {font-size: .9em;}
-
-}
-
-@media only screen and (min-width: 65em) {
-  body {font-size: 1em;}
-
-}
-
-@media only screen and (min-width: 80em) {
-  body {font-size: 1.1em;}
-
-}
-
-@media only screen and (min-width: 95em) {
-  body {font-size: 1.2em;}
-
-}
 
 

@@ -1,0 +1,22 @@
+/*
+This is general page sizing based on the body container size, which scales everything below.
+If you are looking for responsive adjustments for individual elements (ex. login_form) see their respective .scss partials
+*/
+
+@media only screen and (min-width: 42em) {
+  body {font-size: .9em;}
+}
+
+@media only screen and (min-width: 65em) {
+  body {font-size: 1em;}
+
+}
+
+@media only screen and (min-width: 80em) {
+  body {font-size: 1.1em;}
+
+}
+
+@media only screen and (min-width: 95em) {
+  body {font-size: 1.2em;}
+}

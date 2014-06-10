@@ -1,10 +1,25 @@
 ---
 layout: default
+category: login_page
 ---
 
 <div class='cover_container'>
   <div id='your-slider-selector' class="royalSlider rsDefault">
-    <div class='individual_slide storm'>
+    <div class='individual_slide oil'>
+    </div>
+    <div class='individual_slide nuclear'>
+    </div>
+    <div class='individual_slide solar2'>
     </div>
   </div>
+</div>
+
+<div class='signin_form'>
+  <!--<header>Sign In</header>-->
+  <form method="post" action="/user/login">
+    <input name="username" class="form-control" placeholder="username">
+    <input name="password" type="password" placeholder="password" class="form-control">
+    <button type="submit" class="btn submit btn-primary">Submit</button>
+    <!--<a href="/user/signup" class="btn btn-info btn-action">Register</a>-->
+  </form>
 </div>
