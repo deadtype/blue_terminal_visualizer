@@ -1,0 +1,75 @@
+/*
+Design for individual sections of the application.
+*/
+
+.section_container {
+	background: $container_background;
+	background: white;
+	padding: .8rem 1rem 0.2rem 1rem;
+}
+
+nav[role='tabbed_navigation'] {
+	font-weight: 700;
+	font-size: .9em;
+
+	ul {display: inline-block; float: left;}
+
+	li {
+		padding:.4em 1.2rem .3em;
+		color: white;
+		background: #555;
+		-moz-background-clip: padding;     /* Firefox 3.6 */
+		-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+		background-clip: padding-box;      /* Firefox 4, Sa*/
+  		border-bottom: .25em solid transparent;
+	}
+
+	li + li {
+		margin-left: .25em;
+	}
+
+	.active {
+		-moz-background-clip: padding;     /* Firefox 3.6 */
+  		-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+ 		background-clip: padding-box;
+		background-color: $container_background;
+  		color: $core_text_color;
+  		border-bottom: .25em solid $container_background;
+
+	}
+}
+
+
+.search_box {
+
+	input {
+		font-size: 2.5em;
+		line-height: 1.6;
+		font-weight: 800;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: none;
+		webkit-border-radius: 0;
+		border-radius: 0;
+		box-shadow: none;
+		outline: none;
+		background: transparent;
+	}
+
+	  input::-webkit-input-placeholder {
+    color: lightgray;
+    cursor: pointer;
+    font-weight: 800;
+  }
+  input::-moz-placeholder {
+    color: lightgray;
+    cursor: pointer;
+    font-weight: 800;
+  }
+  input:-ms-input-placeholder {
+    color: lightgray;
+    cursor: pointer;
+    font-weight: 800;
+  }
+}

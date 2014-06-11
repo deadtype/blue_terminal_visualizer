@@ -26,13 +26,16 @@ html {
   -webkit-font-feature-settings: "liga";
   font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
+  /*background: url('../img/oil_blur.jpg');
+  background-size: cover;*/
 }
 
 html, button, input, select, textarea {
   @extend .copy;
   line-height: 1.7;
-  background: #e6e6e6;
   color: $core_text_color;
+   background: #e6e6e6;
+
 }
 
 body {
@@ -76,14 +79,10 @@ a {
   -o-transition: color 0.3s ease-out, border-color 0.3s ease-out;
   -ms-transition: color 0.3s ease-out, border-color 0.3s ease-out;
   transition: color 0.3s ease-out, border-color 0.3s ease-out;
-  color: white;
+  color: $link_color;
 }
 
-
-a {color: white;}
-a:hover {color: white;}
-
-
+a:hover {color: $link_color;}
 
 a:focus {
   outline: thin dotted;
@@ -124,6 +123,11 @@ p + p {
   margin: 0;
   padding: 0;
 }
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+li {float: left;}
 
 /* =============================================================================
    Embedded content
@@ -153,7 +157,5 @@ figure {
   margin-left: auto;
   margin-right: auto;
 }
-
-.logo {width: 10em;}
 
 

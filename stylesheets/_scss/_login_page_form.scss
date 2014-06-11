@@ -7,10 +7,11 @@ Login form styles
   bottom: 1rem;
   left: 1rem;
   right: 1rem;
-}
-
-.login_form {
   font-size: .8em;
+
+  a, a:hover {
+    color: white;
+  }
 
   .submit, .btn-action {
     margin-top: .5em;
@@ -51,40 +52,38 @@ Login form styles
 
   input:hover, input:active, .submit:hover {
         background: hsla(0,0%,0%,.65);
-
-
   }
-}
 
-/* input placeholder styles, for some strange reason comma separating the calls breaks them, thus they are written out individually */
-input::-webkit-input-placeholder {
-  color: white;
-cursor: pointer;
-font-weight: 700;
-font-size: .5em;
-text-transform: uppercase;
-}
-input::-moz-placeholder {
-  opacity: 1;
-  color: white;
-cursor: pointer;
-font-size: .5em;
 
-font-weight: 700;
-}
-input:-ms-input-placeholder {
-  color: white;
-cursor: pointer;
-font-size: .5em;
+  /* input placeholder styles, for some strange reason comma separating the calls breaks them, thus they are written out individually */
+  input::-webkit-input-placeholder {
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: .5em;
+    text-transform: uppercase;
+  }
+  input::-moz-placeholder {
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: .5em;
+    text-transform: uppercase;
+  }
+  input:-ms-input-placeholder {
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: .5em;
+    text-transform: uppercase;
+  }
 
-font-weight: 700;
 }
 
 @media only screen and (min-width: 32em) {
 .login_form {
   .submit {
         float: right;
-
   }
 }
 

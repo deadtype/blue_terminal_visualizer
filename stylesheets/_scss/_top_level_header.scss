@@ -1,0 +1,25 @@
+/*
+Design for the top level menu.
+This is where the logo, and app level menu items (ex. user account, setting, logout/login) reside
+*/
+
+
+.main_header {
+	margin-bottom: 2em;
+}
+
+.logo {
+	width: 10em;
+ 	display: inline-block;
+ }
+
+nav[role='app_level_navigation'] {
+	font-weight: 700;
+	font-size: .8em;
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+
+	li {float: left;}
+	li + li {margin-left: 1.75em;}
+}

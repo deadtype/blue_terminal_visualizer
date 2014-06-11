@@ -2,12 +2,20 @@
 Reusable bits go here
 */
 
-$core_text_color: #333;
-$link_hover_color: black;
-$link_color: white;
+/* Define color variables */
+$transparent_background: rgba(255, 255, 255, 0.9);
+$off_black: #333;
+$neutral_gray: hsl(0,0%,90%;)
 
-$knockout_text_color: $core_text_color;
-$logo_color: hsl(0,0%,20%);
+/* Use color variables for interface variables */
+$core_text_color: $off_black;
+$link_color: $off_black;
+$container_background: white;
+$action_area_background: $neutral_gray;
+
+/* Spacing variables */
+
+
 
 
 /* =============================================================================
